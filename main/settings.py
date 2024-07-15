@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = [ '8000-paulmayock-theseshrecip-1kgr7wlbw4q.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['https://8000-paulmayock-theseshrecip-h1tr9swxgc4.ws.codeinstitute-ide.net/']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main',
 ]
 
 MIDDLEWARE = [

@@ -7,3 +7,12 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
+
+# Environments
+.env
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+env.py
