@@ -15,19 +15,20 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-if os.path.exists('env/py'):
+if os.path.exists('env.py'):
     import env
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['https://8000-paulmayock-theseshrecip-h1tr9swxgc4.ws.codeinstitute-ide.net/']
+
+ALLOWED_HOSTS = ['8000-paulmayock-theseshrecip-oo2ffvouv3q.ws.codeinstitute-ide.net']
 
 
 # Application definition
