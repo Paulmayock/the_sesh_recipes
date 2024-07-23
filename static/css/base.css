@@ -51,7 +51,21 @@ a.nav-link {
 }
 
 img.logo {
-    width: 18.75rem;
+    width: 10.75rem;
+}
+
+.active {
+    border-bottom: 3px solid var(--pink);
+    font-weight: 650;
+}
+
+/* Form */
+
+.form {
+    margin: 3% auto;
+    width: 100%;
+    box-shadow: var(--smal-box-shadow);
+    border-radius: 6px;
 }
 
 
