@@ -29,7 +29,7 @@ class Recipe(models.Model):
     title = models.CharField(max_length=400, null=False, blank=False)
     description = models.CharField(max_length=600, null=False, blank=False)
     instructions = RichTextField(max_length=12000, null=False, blank=False)
-    ingrendients = RichTextField(max_length=12000, null=False, blank=False)
+    ingredients = RichTextField(max_length=12000, null=False, blank=False)
     image = ResizedImageField(
         size=[350, None], quality=80, upload_to='recipes/', force_format='WEBP',
         blank=False, null=False
