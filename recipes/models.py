@@ -14,9 +14,9 @@ COCKTAIL_TYPES = (
 
 SPIRIT_TYPES = (
     ('vodka', 'Vodka'),
-    ('whiskey', 'Whiskey')
-    ('rum', 'Rum')
-    ('gin', 'Gin')
+    ('whiskey', 'Whiskey'),
+    ('rum', 'Rum'),
+    ('gin', 'Gin'),
     ('liquor', 'Liquor')
 )
 
@@ -26,18 +26,18 @@ class Recipe(models.Model):
     Model to create and edit recipes
     """
     user = models.ForeignKey(User, related_name='recipe_owner', on_delete=models.CASCADE)
-    title = models.CharField(max_lenght=400, null=False, blank=False)
-    description = models.CharField(max_lenght=600, null=False, blank=False)
-    instructions = RichtextField(max_lenght=12000, null=False, blank=False)
-    ingrendients = RichtextField(max_lenght=12000, null=False, blank=False)
+    title = models.CharField(max_length=400, null=False, blank=False)
+    description = models.CharField(max_length=600, null=False, blank=False)
+    instructions = RichTextField(max_length=12000, null=False, blank=False)
+    ingrendients = RichTextField(max_length=12000, null=False, blank=False)
     image = ResizedImageField(
         size=[350, None], quality=80, upload_to='recipes/', force_format='WEBP',
         blank=False, null=False
     )
 
-    image_alt = models>Charfield(max_lenght=200, null=False, blank=False)
-    cocktail_type = models>Charfield(max_lenght=100, choices=COCKTAIL_TYPES, default='sweet')
-    spirit_types = models>CharField(max_lenght=100, choices=SPIRIT_TYPES, default='gin')
+    image_alt = models.CharField(max_length=200, null=False, blank=False)
+    cocktail_type = models.CharField(max_length=100, choices=COCKTAIL_TYPES, default='sweet')
+    spirit_types = models.CharField(max_length=100, choices=SPIRIT_TYPES, default='gin')
     date_posted = models.DateTimeField(auto_now=True)
 
     class Meta:
