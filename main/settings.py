@@ -163,7 +163,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_EMAIL_VERIFCATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
@@ -185,7 +185,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+if 'DEVELOPMENT' in os.environ:
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Cloudinary Settings
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
