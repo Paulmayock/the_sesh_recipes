@@ -24,16 +24,16 @@ class Recipes(ListView):
     context_object_name = "recipes"
 
     def get_queryset(self, **kwargs):
-        query = self.request.GER.get('q')
+        query = self.request.GET.get('q')
         if query:
-            recipes = self.model.object.filter(
+            recipes = self.model.objects.filter(
                 Q(title__icontains=query) |
                 Q(description__icontains=query) |
                 Q(instructions__icontains=query) |
                 Q(cocktail_type__icontains=query)
             )
         else:
-            recipes = self.model.object.all()
+            recipes = self.model.objects.all()
         return recipes        
 
 
