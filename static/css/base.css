@@ -88,7 +88,7 @@ footer {
 /* Recipes */
 
 .card {
-    height: 80%;
+    height: 85%;
     margin-top: 1rem;
 }
 
@@ -100,3 +100,60 @@ footer {
 .recipes:hover {
     cursor: pointer;
 }
+
+.ingredients, .instructions, .recipe-detail {
+    width: 100%;
+}
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-pic {
+    width: 110%;
+    height: auto;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 62.5em) {
+    .main-title {
+        width: 50%;
+    }
+
+    .recipe-img {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .recipe-detail {
+        width: 70%;
+        padding: 2rem;
+    }
+
+    .recipe-container {
+        flex-direction: row;
+    }
+
+    .recipe-info {
+        flex-direction: row;
+        border: 1px solid var(--black);
+    }
+
+    .ingredients {
+        width: 30%;
+    }
+
+    .instructions {
+        width: 70%;
+    }

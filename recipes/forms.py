@@ -5,6 +5,7 @@ from .models import Recipe
 
 class RecipeForm(forms.ModelForm):
     """Form to create a recipe"""
+
     class Meta:
         model = Recipe
         fields = [
@@ -17,19 +18,20 @@ class RecipeForm(forms.ModelForm):
             "cocktail_type",
             "spirit_types",
         ]
+
     ingredients = forms.CharField(widget=RichTextWidget())
     instructions = forms.CharField(widget=RichTextWidget())
 
     widget = {
-            "description": forms.Textarea(attrs={"rows": 5}),
-        }
+        "description": forms.Textarea(attrs={"rows": 5}),
+    }
     labels = {
-            "title": "Recipe Title",
-            "description": "Description",
-            "ingredients": "Recipe Ingredients",
-            "instructions": "Recipe Instructions",
-            "image": "Recipe Image",
-            "image_alt": "Describe Image",
-            "cocktail_type": "Cocktail Type",
-            "spirit_types": "Spirit Type",
-        }    
+        "title": "Recipe Title",
+        "description": "Description",
+        "ingredients": "Recipe Ingredients",
+        "instructions": "Recipe Instructions",
+        "image": "Recipe Image",
+        "image_alt": "Describe Image",
+        "cocktail_type": "Cocktail Type",
+        "spirit_types": "Spirit Type",
+    }

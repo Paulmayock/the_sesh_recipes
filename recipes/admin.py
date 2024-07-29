@@ -15,4 +15,5 @@ class RecipeAdmin(admin.ModelAdmin):
     )
     list_filter = ("cocktail_type",)
 
-admin.site.register(Recipe, RecipeAdmin)    
+
+admin.site.register(Recipe, RecipeAdmin)
