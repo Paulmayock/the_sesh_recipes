@@ -8,6 +8,8 @@ from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
 )
 
+from django.db.models import Q
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
@@ -16,10 +18,21 @@ from .forms import RecipeForm
 
 
 class Recipes(ListView):
-    """View all recipes"""
+    """ View all recipes """
     template_name = "recipes/recipes.html"
     model = Recipe
     context_object_name = "recipes"
+
+    def get_queryset(self, **kwargs):
+        query = self.request.GER.get('q')
+        if query:
+            recipes = self.model.object.filter(
+                Q(title__icontains=query) |
+                Q(description__icontains=query)
+                Q(instructions__icontains=query)
+                Q(cocktail_type__icontains=query)
+            )
+
 
 class RecipeDetail(DetailView):
     """ View a single recipe """  
@@ -39,7 +52,7 @@ class AddRecipe(LoginRequiredMixin, CreateView):
         return super(AddRecipe, self).form_valid(form)
 
 class EditRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    """Edit a recipe"""
+    """ Edit a recipe """
     template_name = 'recipes/edit_recipe.html'
     model = Recipe
     form_class = RecipeForm
