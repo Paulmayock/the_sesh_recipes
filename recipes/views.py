@@ -28,10 +28,13 @@ class Recipes(ListView):
         if query:
             recipes = self.model.object.filter(
                 Q(title__icontains=query) |
-                Q(description__icontains=query)
-                Q(instructions__icontains=query)
+                Q(description__icontains=query) |
+                Q(instructions__icontains=query) |
                 Q(cocktail_type__icontains=query)
             )
+        else:
+            recipes = self.model.object.all()
+        return recipes        
 
 
 class RecipeDetail(DetailView):
