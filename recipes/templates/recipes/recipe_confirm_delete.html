@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %}Delete recipe {{ object.title }}{% endblock %} 
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center mt-2">Recipe Deletion Confirmation</h2>
+    <div class="d-flex justify-content-center pt-3">
+        <form method="post" class="text-center">
+            {% csrf_token %} 
+            <p>Are you sure you want to delete "{{object.title}}" cocktail?</p>
+            <input type="submit" value="Confirm" class="btn btn-primary w-27">
+        </form>
+    </div>
+</div>
+{% endblock %}
