@@ -161,6 +161,10 @@ a.img-container:hover {
     flex-wrap: wrap;
 }
 
+element.style {
+    overflow: hidden;
+}
+
 @media screen and (min-width: 62.5em) {
     .main-title {
         width: 50%;
