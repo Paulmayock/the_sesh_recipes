@@ -1,1 +1,31 @@
 {% extends 'base.html' %}
+
+{% block title %}Home{% endblock %} 
+
+
+{% block content %} 
+
+<div class="container flex-column pt-3">
+    <section class="text-center">
+        <h1 class="main-title mx-auto">Discover the Greatest Cocktail Recipes</h1>
+
+        <p class="pt-4">
+            Welcome to the Greatest Cocktail recipe site! Want to impress your friends with tasty Cocktails. 
+            Well you have come to the right place. With this app you can view a list of Cocktail Recipes 
+            for you and your friends. Got some great Cocktail Recipes, why not add them for others to enjoy.
+            Join today and let the Cocktail making begin!
+        </p>
+    </section>
+    <section>
+        <div class="recipe-cont">
+            {% for recipe in recipes %} 
+                <a href="{% url 'recipe_detail' recipe.id %}" class="img-container">
+                    <img src="{{recipe.image.url}}" alt="{{recipe.image_alt}}" style="width: 100%">
+                    <div class="centered"><h2>{{recipe.title}}</h2></div>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+
+{% endblock %}

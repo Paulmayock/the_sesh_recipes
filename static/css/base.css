@@ -126,6 +126,41 @@ footer {
     flex-direction: column;
 }
 
+a.img-container {
+    position: relative;
+    text-align: center;
+    color: var(--off-white);
+    margin: 2%;
+    overflow: hidden;
+    text-decoration: none;
+    border: 2px solid var(--border);
+    box-shadow: var(--smal-box-shadow);
+}
+
+a.img-container:hover {
+    color: var(--yellow);
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    width: 100%;
+    background-color: #070000c9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recipe-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 62.5em) {
     .main-title {
         width: 50%;
@@ -156,5 +191,20 @@ footer {
 
     .instructions {
         width: 70%;
+    }
+}
+
+@media screen and (min-width:40em){
+    .form {
+        width: 50%;
+    }
+
+    .recipe-cont {
+        flex-direction: row;
+    }
+
+    .img-container {
+        flex-direction: row;
+        width: 30%;
     }
 }
