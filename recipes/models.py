@@ -18,6 +18,7 @@ SPIRIT_TYPES = (
     ("rum", "Rum"),
     ("gin", "Gin"),
     ("liquor", "Liquor"),
+    ("nonalcoholic", "Non-Alcoholic"),
 )
 
 
