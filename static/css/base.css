@@ -99,6 +99,7 @@ footer {
 
 .recipes:hover {
     cursor: pointer;
+    color:#1961fc;
 }
 
 .ingredients, .instructions, .recipe-detail {
@@ -161,7 +162,7 @@ a.img-container:hover {
     flex-wrap: wrap;
 }
 
-element.style {
+.element.style {
     overflow: hidden;
 }
 
