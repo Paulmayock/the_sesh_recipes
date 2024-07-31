@@ -1,1 +1,1 @@
-web: gunicorn THE_SESH_RECIPES.wsgi
+web: gunicorn main.wsgi
