@@ -10,12 +10,14 @@ The live version of this app is located [here](https://sesh-recipes-d4bfd3561a5d
 1. [Design](#design)
     * [User Stories](#user-stories)
     * [Agile Methodology](#agile-methodology)
+    * [Wireframe](#wireframe)
     * [Database Diagram](#database-diagram)
     * [Features](#features)
     * [Future Features](#future-features)
-    * [Technologies Used](#technologies-used)
     * [Testing](#testing)
     * [Deployment](#deployment)
+    * [Technologies Used](#technologies-used)
+    * [Credits](#credits)
 
 # User Stories
 User stories are a way to define the functionality and features of the cocktail recipe app from the perspective of the end users. Here are some user stories for a cocktail recipe app:
@@ -34,6 +36,11 @@ As a user, I want to be able to view and create cocktail recipes so I can make c
 # Agile methodology
 
 GitHub is a powerful platform for version control. In addition it can be effectively used to support agile methodologies. Github Projects was used to track the development of this app using the agile approach. The project can be found [here](https://github.com/users/Paulmayock/projects/1).
+
+# Wireframe
+
+This was used to map out a rough idea of what the app would look like
+![Wireframe](docs/images/Wireframe.PNG)
 
 # Features
 
@@ -223,3 +230,23 @@ Some features I would like to implement in future releases are as follows.
 - To deploy, scroll down and click the deploy branch button
 
 - Heroku will notify you that the app was successfully deployed with a button to view the app
+
+ # Technologies and sites used
+- Django - Free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.
+- Python - General-purpose programming language. 
+- Bootstrap - Free front-end framework for faster and easier web development.
+- HTML - The standard markup language for Web pages.
+- CSS -  style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+- JavaScript - lightweight interpreted  programming language with first-class functions.
+- Pixlr - AI image generator to generate images by describing what you require.
+- Github - platform and cloud-based service for software development and version control using Git.
+- Gitpod - cloud development environment to efficiently and securely develop software. 
+- Heroku - platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+- Liquor.com - Website dedicated to inspire those to make cocktails
+
+
+## Credits
+
+- Code Institute's 'Hello Django" and "I Think Therefore I Blog" walk through provided fundamentals of creating a project with Django.
+
+- Daisy Mcgirr and David Bowers who helped me with my project setup and ideas for a project and throughout.
