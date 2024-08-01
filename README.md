@@ -69,3 +69,10 @@ GitHub is a powerful platform for version control. In addition it can be effecti
 - **Forgotten Password** Users who forget their password can email the app admin to has this reset.
 ![Forgotten Password](docs/images/forgotten_password.png)
 
+# Future Features
+
+Some features I would like to implement in future releases are as follows.
+- Add a map so users can search locations of cocktail bars in their area and off-licenses.
+- Add a rating system so users can rate cocktails.
+- Add a option to add shot/shooter recipes.
+- Add a more fixed search engine to search cocktails for time of year(sumemer, winter)
