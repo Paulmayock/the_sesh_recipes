@@ -4,7 +4,7 @@ The Seesh Recipes App is a web application built using the Django web framework.
 
 ![Screenshot of how the app looks on different screen sizes](docs/images/multi_screen.PNG)
 
-The live version of this app is located [The Seesh Recipes](https://sesh-recipes-d4bfd3561a5d.herokuapp.com/)
+The live version of this app is located [here](https://sesh-recipes-d4bfd3561a5d.herokuapp.com/)
 
 ## Table Of Contents:
 1. [Design](#design)
@@ -29,3 +29,43 @@ As a user, I want to be able to view and create cocktail recipes so I can make c
 - As a user, I should be able to delete cocktail recipes added by me.
 - As a user, I want to be able to easily search for cocktail recipes in list to sperate different cocktail recipes by ingredients.
 - As a user, I want to be able to view and edit my cocktail recipes on multiple devices (e.g., smartphone, tablet, web browser) for convenience and accessibility.    
+
+
+# Agile methodology
+
+GitHub is a powerful platform for version control. In addition it can be effectively used to support agile methodologies. Github Projects was used to track the development of this app using the agile approach. The project can be found [here](https://github.com/users/Paulmayock/projects/1).
+
+# Features
+
+- **User-friendly design:** The app has a container desing which is accessible and user-friendly on various devices, including mobile phones and tablets.
+![Accessible and user-friendly design](docs/images/Home_screen.PNG) 
+
+- **User Sign up:** Users can sign up to create a account to add cocktail recipes.
+![Registration](docs/images/Sign_up.PNG) 
+
+- **User Sign in:** Users can sign in to their account.
+![Sign in](docs/images/Sign_In.PNG)
+
+- **Recipe List:** Users can view the list of cocktail recipes added.
+![Recipe List](docs/images/recipes.PNG) 
+
+- **Recipe Details:** Users can click on recipes to view ingredients and steps to making the cocktail selected.
+![Recipe Details](docs/images/recipe_details.PNG) 
+
+- **Recipe Search:** User can search cocktail recipes from the list in the search bar. 
+![Recipe Search](docs/images/recipe_search.PNG) 
+
+- **Add Recipe:** User who is signed up and logged in can add a cocktail recipe.
+![Add Recipe top part](docs/images/add_recipe_top.PNG)
+![Add Recipe bottom part](docs/images/add_recipe_bottom.PNG)
+
+- **Edit Recipe:** Users who created recipes can edit their recipes in case a mistake is made when first adding the cocktail recipe. 
+![Edit Recipe top part](docs/images/edit_recipe_top.PNG) 
+![Edit Recipe bottom part](docs/images/edit_recipe_bottom.PNG)
+
+- **Delete Recipe:** Users who created a recipe can delete it.
+![Delete Recipe](docs/images/delete_recipe.PNG) 
+
+- **Forgotten Password** Users who forget their password can email the app admin to has this reset.
+![Forgotten Password](docs/images/forgotten_password.png)
+
