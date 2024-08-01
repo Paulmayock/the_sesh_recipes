@@ -146,3 +146,43 @@ Some features I would like to implement in future releases are as follows.
 | Header title  | Make sure that the correct title displayed when open either the Add or Edit form  | Pass    |
 | Responsiveness | The app layout changes depending on the viewed devices         | Pass      |
 | Social icons | When clicking on a social icon in the footer it opens the correct web address in the new tab       | Pass      |
+
+## Code Validation
+
+#### HTML validation
+![HTML validation](docs/images/html_validation.PNG)
+
+#### CSS Validation
+![CSS validation](docs/images/css_validation.PNG)
+
+### PEP Validation
+
+##### Admin.py Validation
+![Admin.py validation](docs/images/admin_validation.PNG)
+
+##### Apps.py Validation
+![Apps.py validation](docs/images/apps_validation.PNG)
+
+##### Models.py Validation
+![Models.py validation](docs/images/models_validation.PNG)
+
+##### Urls.py Validation
+![Urls.py validation](docs/images/urls_validation.PNG)
+
+##### Views.py Validation
+![View.py validation](docs/images/views_validation.PNG)
+
+### Lighthouse
+
+##### Home page
+![Home page](docs/images/lighthouse_home.PNG)
+
+##### Recipes page
+![Recipes page](docs/images/lighthouse_recipes.PNG)
+
+##### SignIn Page
+![Signin page](docs/images/lighthouse_signin.PNG)
+
+##### Create page
+![Create page](docs/images/Lighthouse_create.PNG)
+
