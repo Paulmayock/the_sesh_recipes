@@ -21,15 +21,27 @@
     {% endblock %}
 
     <title>The Sesh Recipes - {%block title %}{% endblock %}</title>
+
+    {% if messages %}
+    <div class="message-container">
+        <strong></strong>
+        <ul class="list-unstyled">
+            {% for message in messages %}
+                <li>{{message}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
 </head>
 <body>
     {% include 'includes/header.html' %}
-
     <main>
         {% block content %}
         {% endblock %}
     </main>
-
+    
     {% include 'includes/footer.html' %}
+    
 </body>
 </html>
