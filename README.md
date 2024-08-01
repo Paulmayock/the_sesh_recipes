@@ -76,3 +76,58 @@ Some features I would like to implement in future releases are as follows.
 - Add a rating system so users can rate cocktails.
 - Add a option to add shot/shooter recipes.
 - Add a more fixed search engine to search cocktails for time of year(sumemer, winter)
+
+# Testing 
+
+## User story testing
+#### About The app 
+*As a User I want to understand what the app is about.*
+- On the app home page there is information that cleary tells the user the purpose of the app.
+
+#### Sign up
+*As a User I can Sign upto an account so that I can add my cocktail recipes to the the cocktail list.*
+- On the app home page there is a Register button.  If a User clicks on this button, they will be redirected to the registeration page where they can sign up. Once they sign 
+  up they will be able to create, access and edit the cocktail list they created.
+
+#### Sign in/Logout
+*As a user I can login and logout so I can have user priveledges over cocktails I created.*
+- When a User is not logged in, the Login button is visible in the center of the app. When the user clicks on the login button, they are redirected to the sign in page where 
+  they need to enter their user name and password. In the top right corner of the app the user will see the option to logout from the account.
+- After clicking on Logout button, the user automatically redirected to the home page.
+
+#### Recipe List
+*As a user I can see the cocktail recipes list with an image attached of that cocktail.*
+- When a user clicks on the Recipe button they can see the list of recipes added by users.
+
+#### Recipe Details
+*As a user I want to click on a cocktail recipe and see the type of cocktail, list of ingredients and instructions to make the cocktail*
+- When a user clicks on a cocktail it shows the type of cocktail, the instructions and and ingredients to make that cocktail.
+
+#### Recipe Search
+*As a user I want to be able to search a cocktail recipe by either the cocktail name, spirit type, cocktail type or ingredients*
+- On the footer page there is a search box. If a users enters a cocktail name, spirit type, cocktail type or ingredients
+  a matching list should appear.
+
+#### Adding a Cocktail Recipe  
+*As a user I want to be able to add a cocktail recipe*
+- Once a user is logged in they can click the Create button on the top of the app.
+- The user can then create a cocktail by filling out all the required fields.
+- Once filled out the user clicks create recipe and the recipe will be added to the cocktail recipe list.
+
+#### Edit a Recipe
+*As a user I want to be able to edit a cocktail which I created in case I need to edit the recipe*
+- Once logged in a user can search recipes they created by searching their username. 
+- When they click on a recipe their should be an option to edit the recipe.
+- Only the user who created the recipe can edit the recipe.
+
+#### Deleting a Recipe
+*As a user I want to be able to delete a cocktail which I created in case I want it removed from the list*
+- Once logged in a user can search recipes they created by searching their username. 
+- When they click on a recipe their should be an option to delete the recipe.
+- Only the user who created the recipe can delete the recipe.
+
+#### Forgotten Password
+*As a user I want an option to reset my password in case I forget it*
+- If the user forgets their password or wants their password reset they can click login button on the home page.
+- They will then see an option for forgot password.
+- When they click this a message shows to email the sesh recipes email to reset password.
