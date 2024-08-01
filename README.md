@@ -131,3 +131,18 @@ Some features I would like to implement in future releases are as follows.
 - If the user forgets their password or wants their password reset they can click login button on the home page.
 - They will then see an option for forgot password.
 - When they click this a message shows to email the sesh recipes email to reset password.
+
+## Manual Testing
+| Feature               | Test Performed                                                     | Result  |
+|-----------------------|--------------------------------------------------------------------|---------|
+| Register button | Clicking on the button redirects to the sign up form                     | Pass   |
+| Login button | Clicking on the button redirect to the login form                          | Pass    |
+| Logout button | When logged in the app, the link in the top right corner changes to Logout  | Pass    |
+| Create cocktail | Once logged in clicking on the create button allows user to add a new recipe          | Pass    |
+| Fill all fields when creating cocktail | All fields must be filled when creating cocktail or recipe will not be created         | Pass    |
+| Edit cocktail | Clicking on the recipe the user created opens details which can be edited | Pass    |
+| Delete cocktail  | Clicking on the recipe the user created opens details wherea button to delete recipes is present | Pass    |
+| Search recipe | Entering a cocktail name, spirit type, cocktail type or ingredients, a matching list should appear  | Pass    |
+| Header title  | Make sure that the correct title displayed when open either the Add or Edit form  | Pass    |
+| Responsiveness | The app layout changes depending on the viewed devices         | Pass      |
+| Social icons | When clicking on a social icon in the footer it opens the correct web address in the new tab       | Pass      |
