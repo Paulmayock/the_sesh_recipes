@@ -16,7 +16,7 @@ The live version of this app is located [here](https://sesh-recipes-d4bfd3561a5d
     * [Future Features](#future-features)
     * [Testing](#testing)
     * [Deployment](#deployment)
-    * [Technologies Used](#technologies-used)
+    * [Technologies and sites used](#technologies-and-sites-used)
     * [Credits](#credits)
 
 # User Stories
