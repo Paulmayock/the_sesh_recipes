@@ -250,3 +250,5 @@ Some features I would like to implement in future releases are as follows.
 - Code Institute's 'Hello Django" and "I Think Therefore I Blog" walk through provided fundamentals of creating a project with Django.
 
 - Daisy Mcgirr and David Bowers who helped me with my project setup and ideas for a project and throughout.
+
+- StackOverflow and Slack communinity for tips on how to write some of code for my project
