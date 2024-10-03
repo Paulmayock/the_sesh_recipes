@@ -251,4 +251,4 @@ Some features I would like to implement in future releases are as follows.
 
 - Daisy Mcgirr and David Bowers who helped me with my project setup and ideas for a project and throughout.
 
-- StackOverflow and Slack communinity for tips on how to write some of code for my project
+- StackOverflow and Slack communinity for tips on how to write some of code for my project.
